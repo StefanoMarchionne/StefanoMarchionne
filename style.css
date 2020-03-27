@@ -1,20 +1,17 @@
+/* settaggi generali */
 body {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.65;
+  margin: 0%;
 }
 
 p {
   margin: 0 0 1rem 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   line-height: 1.5;
   text-transform: uppercase;
@@ -54,47 +51,60 @@ a {
   color: #ce1b28;
 }
 
-.inner {
-  margin: 0 auto;
-  width: 75rem;
+/* settaggi banner e main */
+
+ .inner {
+  margin: 5% auto;
   max-width: calc(100% - 6rem);
-  
+  position:static;
+
 }
+
 #banner{
   background: linear-gradient(135deg, #ce1b28 0%, #111111 74%);
-  content: " ";
   display: block;
-  height: 50%;
   left: 0;
   opacity: 100;
-  position: absolute;
+  position:static;
   top: 0;
   width: 100%;
-  z-index: 1;
 }
+
 #header{
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    background: #111111;
-    color: rgba(255, 255, 255, 0.5);
-    cursor: default;
-    height: 3.25rem;
-    left: 0;
-    line-height: 3.25rem;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10001;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background: #111111;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: default;
+  height: 3.25rem;
+  left: 0;
+  line-height: 3.25rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1001;
 }
-.menu{
-  margin-right: 2rem; 
+
+/* settaggi pagina curriculum */
+
+#cv-nospace{
+  margin: 0 0 0 0;
 }
-.wrapper {
-  padding: 20rem 0 6rem 0 ;
-  position: relative;
-  z-index: 1; 
+
+/* barra fissa in alto con link */
+.line{
+  background-color: #11111100;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  height: inherit;
+  line-height: inherit;
+  padding: 0 1.25rem;
+  text-decoration: none;
+  border: 0;
 }
+
 #logo{
   width: 40px;
   height: 850%;
@@ -105,21 +115,8 @@ a {
   padding-bottom: 35px;
   padding-left: 1px;
 }
-.copyright {
-  background-color: #111111;
-  border-top: 1px solid;
-  width: 100%;
-  font-size: 0.8rem;
-  opacity: 100;
-  padding: 2rem 0;
-  text-align: center;
-  left: 0;
-  position: absolute;
-  width: 100%;
-}
-#textfooter{
-  color: #ffffff;
-}
+
+/* animazione titolo */
 .grow { 
   font-size: 3rem; 
   line-height: 1.2;
@@ -137,18 +134,20 @@ a {
     transform: scale(1);
   }
 }
-#cv-nospace{
-  margin: 0 0 0 0;
+
+/* footer */
+.copyright {
+  background-color: #111111;
+  border-top: 1px solid;
+  width: 100%;
+  font-size: 0.8rem;
+  opacity: 100;
+  padding: 2rem 0;
+  text-align: center;
+  left: 0;
+  position: absolute;
+  width: 100%;
 }
-.line{
-  background-color: #11111100;
+#textfooter{
   color: #ffffff;
-  font-size: 1rem;
-  font-weight: 600;
-  height: inherit;
-  line-height: inherit;
-  padding: 0 1.25rem;
-  text-decoration: none;
-  border: 0;
-  
 }
